@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="714.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="unoeste.fipp.photoshopfx.ImageController">
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <ImageView fx:id="imageView" fitHeight="295.0" fitWidth="388.0" pickOnBounds="true" preserveRatio="true" />
+         </content>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#onTonsCinza" text="Converter Tons de Cinza" />
+                  <MenuItem mnemonicParsing="false" onAction="#onPretoBranco" text="Converter Preto e Branco" />
+                  <MenuItem mnemonicParsing="false" onAction="#onEspelharVertical" text="inverter vertical" />
+                  <MenuItem mnemonicParsing="false" onAction="#onEspelharHorizontal" text="inverter Horizontalmente" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ScrollPane>
+   </center>
+</BorderPane>
